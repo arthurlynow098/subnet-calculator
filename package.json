@@ -1,0 +1,11 @@
+{
+  "name": "subnet-calculator",
+  "version": "1.0.0",
+  "description": "Calculadora de sub-redes IPv4 em JavaScript puro, com visualização em binário",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/subnet.test.js"
+  },
+  "author": "Arthur Entsev",
+  "license": "MIT"
+}
