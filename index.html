@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Subnet Calc, calculadora de sub-redes IPv4</title>
+  <meta name="description" content="Calculadora de sub-redes IPv4 com visualização em binário, divisão de redes e cálculo por número de hosts.">
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <header class="topo">
+    <span class="logo">subnet<b>calc</b></span>
+    <a href="https://github.com/arthurlynow098/subnet-calculator">código no GitHub</a>
+  </header>
+
+  <main>
+    <section class="entrada">
+      <h1>Calculadora de sub-redes IPv4</h1>
+      <p class="mudo">Digite um endereço com prefixo ou máscara. Tudo é calculado no seu navegador.</p>
+      <form id="form">
+        <input id="ip" value="192.168.0.77/24" spellcheck="false" autocomplete="off" aria-label="Endereço IPv4 com prefixo">
+        <button type="submit">calcular</button>
+      </form>
+      <div class="atalhos">
+        <button data-ex="10.0.0.1/8">10.0.0.1/8</button>
+        <button data-ex="172.16.5.4/20">172.16.5.4/20</button>
+        <button data-ex="192.168.1.130 255.255.255.192">192.168.1.130 255.255.255.192</button>
+        <button data-ex="200.150.10.5/30">200.150.10.5/30</button>
+      </div>
+      <p id="erro" class="erro" role="alert"></p>
+    </section>
+
+    <section id="resultado" class="grade"></section>
+
+    <section class="cartao">
+      <h2>Visão em binário</h2>
+      <p class="mudo">Os bits em destaque são a parte de rede, o resto é a parte de host.</p>
+      <div id="binario" class="binario"></div>
+    </section>
+
+    <section class="cartao">
+      <h2>Dividir a rede</h2>
+      <form id="form-divisao" class="linha">
+        <label>novo prefixo <input id="novo-prefixo" type="number" min="1" max="32" value="26"></label>
+        <button type="submit">dividir</button>
+      </form>
+      <div class="tabela-wrap"><table id="tabela"></table></div>
+    </section>
+
+    <section class="cartao">
+      <h2>Quantos hosts eu preciso?</h2>
+      <form id="form-hosts" class="linha">
+        <label>hosts <input id="hosts" type="number" min="1" value="50"></label>
+        <button type="submit">descobrir prefixo</button>
+      </form>
+      <p id="resposta-hosts" class="destaque"></p>
+    </section>
+  </main>
+
+  <footer>feito por <a href="https://github.com/arthurlynow098">Arthur Entsev</a> como parte do Lince Lab</footer>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>

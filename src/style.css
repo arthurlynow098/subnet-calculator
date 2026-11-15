@@ -1,0 +1,41 @@
+:root {
+  --fundo: #0b0b0b; --papel: #151515; --linha: #262626; --texto: #f5f1e6; --mudo: #8a867c;
+  --cor: #38bdf8; --cor-fraca: #0c4a6e; --erro: #f87171;
+  --mono: "Cascadia Code", "JetBrains Mono", Consolas, monospace;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fundo); color: var(--texto); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+a { color: var(--cor); }
+.topo { display: flex; justify-content: space-between; align-items: center; padding: 16px 24px; border-bottom: 1px solid var(--linha); }
+.logo { font-weight: 900; font-size: 20px; letter-spacing: -.5px; } .logo b { color: var(--cor); }
+main { max-width: 960px; margin: 0 auto; padding: 32px 16px 64px; display: grid; gap: 24px; }
+h1 { margin: 0 0 4px; font-size: clamp(26px, 5vw, 40px); letter-spacing: -1px; }
+h2 { margin: 0 0 8px; font-size: 20px; }
+.mudo { color: var(--mudo); margin: 0 0 12px; }
+form { display: flex; gap: 8px; flex-wrap: wrap; }
+input { flex: 1; min-width: 0; background: var(--papel); color: var(--texto); border: 1px solid var(--linha); border-radius: 10px; padding: 12px 14px; font: 18px var(--mono); }
+input:focus { outline: 2px solid var(--cor); border-color: transparent; }
+button { background: var(--cor); color: #04131c; border: 0; border-radius: 10px; padding: 12px 18px; font-weight: 800; cursor: pointer; }
+.atalhos { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+.atalhos button { background: transparent; color: var(--mudo); border: 1px solid var(--linha); font: 13px var(--mono); padding: 6px 10px; }
+.atalhos button:hover { color: var(--texto); border-color: var(--cor); }
+.erro { color: var(--erro); min-height: 1.5em; margin: 8px 0 0; }
+.grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+.card, .card-destaque { background: var(--papel); border: 1px solid var(--linha); border-radius: 12px; padding: 14px 16px; display: grid; gap: 4px; }
+.card span { color: var(--mudo); font-size: 13px; }
+.card strong { font: 600 17px var(--mono); word-break: break-all; }
+.card-destaque { grid-column: 1 / -1; background: var(--cor-fraca); border-color: var(--cor); font: 800 28px var(--mono); }
+.cartao { background: var(--papel); border: 1px solid var(--linha); border-radius: 14px; padding: 20px; }
+.binario { display: grid; gap: 8px; overflow-x: auto; }
+.bin-linha { display: grid; grid-template-columns: 80px 1fr; align-items: center; gap: 8px; }
+.bin-rotulo { color: var(--mudo); font-size: 13px; }
+code { font: 15px var(--mono); white-space: nowrap; letter-spacing: 1px; }
+.bit-rede { color: var(--cor); font-weight: 700; } .bit-host { color: var(--mudo); }
+.linha { align-items: end; } .linha label { display: grid; gap: 4px; color: var(--mudo); font-size: 13px; }
+.linha input { width: 140px; flex: none; font-size: 16px; }
+.tabela-wrap { overflow-x: auto; margin-top: 16px; }
+table { width: 100%; border-collapse: collapse; font: 14px var(--mono); }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--linha); white-space: nowrap; }
+th { color: var(--mudo); font-weight: 600; font-family: system-ui, sans-serif; }
+.destaque { font: 700 18px var(--mono); color: var(--cor); }
+footer { text-align: center; color: var(--mudo); padding: 24px; border-top: 1px solid var(--linha); font-size: 14px; }
