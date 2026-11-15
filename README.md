@@ -1,6 +1,6 @@
 <a id="top"></a>
 
-<p align="center"><img src="assets/banner.png" alt="Subnet Calc" width="100%"></p>
+<p align="center"><img src="assets/banner.svg" alt="Subnet Calc" width="100%"></p>
 
 <p align="center">
 <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-ES%20modules-38BDF8?style=for-the-badge&logo=javascript&logoColor=white">
@@ -13,7 +13,7 @@
 
 <a id="sobre"></a>
 
-<p><img src="assets/secao-01.png" alt="Sobre o projeto" width="100%"></p>
+<p><img src="assets/secao-01.svg" alt="Sobre o projeto" width="100%"></p>
 
 Sub-rede foi o primeiro assunto de redes que me travou de verdade. Dá para decorar que um /24 tem 254 hosts, mas eu só entendi **por que** quando vi os bits. Então fiz uma calculadora que mostra o endereço em binário com a parte de rede destacada, divide uma rede em sub-redes menores e responde a pergunta mais comum do dia a dia, que é "qual prefixo eu uso para caber N máquinas?".
 
@@ -23,7 +23,7 @@ Roda inteira no navegador, sem framework e sem servidor.
 
 <a id="como-funciona"></a>
 
-<p><img src="assets/secao-02.png" alt="Como funciona" width="100%"></p>
+<p><img src="assets/secao-02.svg" alt="Como funciona" width="100%"></p>
 
 Um IPv4 é só um número de 32 bits escrito em quatro pedaços. Com isso, todo o cálculo vira operação de bits
 
@@ -46,7 +46,7 @@ A lógica fica em `src/subnet.js`, separada do DOM, e por isso é testada direto
 
 <a id="rodando"></a>
 
-<p><img src="assets/secao-03.png" alt="Rodando na sua máquina" width="100%"></p>
+<p><img src="assets/secao-03.svg" alt="Rodando na sua máquina" width="100%"></p>
 
 Online em **[arthurlynow098.github.io/subnet-calculator](https://arthurlynow098.github.io/subnet-calculator/)**.
 
@@ -67,7 +67,7 @@ npm test
 
 A URL guarda o que foi digitado, então dá para mandar o link de um cálculo específico para alguém.
 
-<p><img src="assets/secao-04.png" alt="Exemplo de saída" width="100%"></p>
+<p><img src="assets/secao-04.svg" alt="Exemplo de saída" width="100%"></p>
 
 ```text
 $ npm test
@@ -86,7 +86,7 @@ $ npm test
 
 <a id="aprendi"></a>
 
-<p><img src="assets/secao-05.png" alt="O que eu aprendi" width="100%"></p>
+<p><img src="assets/secao-05.svg" alt="O que eu aprendi" width="100%"></p>
 
 - Sub-rede de verdade, enxergando os bits em vez de decorar tabela
 - Operações de bit em JavaScript e a pegadinha do inteiro com sinal
@@ -102,7 +102,7 @@ Próximos passos
 
 <a id="estudos"></a>
 
-<p><img src="assets/secao-06.png" alt="Estudei por aqui" width="100%"></p>
+<p><img src="assets/secao-06.svg" alt="Estudei por aqui" width="100%"></p>
 
 Segui essas aulas e materiais para entender e aplicar tudo que está aqui.
 
